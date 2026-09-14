@@ -134,7 +134,7 @@ header{position:sticky; top:0; z-index:50; background:var(--white); border-botto
 .training{background:var(--paper);}
 .train-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:26px;}
 @media(max-width:700px){.train-grid{grid-template-columns:1fr;}}
-.train-grid .train-card:nth-child(5), .train-grid .train-card:nth-child(6){grid-column:1 / -1;}
+.train-grid .train-card:nth-child(4), .train-grid .train-card:nth-child(5){grid-column:1 / -1;}
 .train-card{background:var(--white); border-radius:16px; padding:26px;}
 .train-card .tag{color:var(--sky); font-weight:700; font-size:0.82rem; text-transform:none; margin-bottom:8px; display:block;}
 .train-card h3{font-size:1.15rem; margin-bottom:8px;}
@@ -315,9 +315,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
         Rocafort Rockers nació de una idea sencilla: los niños no deberían tener que pasar una prueba para poder jugar al fútbol. Lo que empezó como un pequeño grupo de niños y familias del pueblo se ha convertido en una comunidad de más de 50 jugadores y voluntarios.
       </p>
       <p class="i18n"
-        data-en="Boys and girls of different ages and abilities train together each week, supported by parents and volunteer coaches. Our goal isn't to build an elite football academy — it's to give children a place to play, learn, make friends and enjoy sport."
-        data-es="Niños y niñas de distintas edades y niveles entrenan juntos cada semana, con el apoyo de padres y entrenadores voluntarios. Nuestro objetivo no es formar una academia de élite, sino ofrecer a los niños un lugar donde jugar, aprender, hacer amigos y disfrutar del deporte.">
-        Niños y niñas de distintas edades y niveles entrenan juntos cada semana, con el apoyo de padres y entrenadores voluntarios. Nuestro objetivo no es formar una academia de élite, sino ofrecer a los niños un lugar donde jugar, aprender, hacer amigos y disfrutar del deporte.
+        data-en="We started in 2025 on a public pitch in Rocafort, then moved to the Polideportivo Municipal, and now also have access to an artificial pitch in Bonrepòs."
+        data-es="Empezamos en 2025 en un campo público de Rocafort, después nos trasladamos al Polideportivo Municipal, y ahora también tenemos acceso a un campo artificial en Bonrepòs.">
+        Empezamos en 2025 en un campo público de Rocafort, después nos trasladamos al Polideportivo Municipal, y ahora también tenemos acceso a un campo artificial en Bonrepòs.
+      </p>
+      <p class="i18n"
+        data-en="Boys and girls of different ages and abilities train together each week, supported by parents and volunteer coaches. Our goal is to give children a place to play, learn, make friends and enjoy sport."
+        data-es="Niños y niñas de distintas edades y niveles entrenan juntos cada semana, con el apoyo de padres y entrenadores voluntarios. Nuestro objetivo es ofrecer a los niños un lugar donde jugar, aprender, hacer amigos y disfrutar del deporte.">
+        Niños y niñas de distintas edades y niveles entrenan juntos cada semana, con el apoyo de padres y entrenadores voluntarios. Nuestro objetivo es ofrecer a los niños un lugar donde jugar, aprender, hacer amigos y disfrutar del deporte.
       </p>
       <p class="i18n"
         data-en="Rocafort Rockers, Asociación Cultural y Deportiva is a non-profit, volunteer-run community association."
@@ -409,11 +414,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
         <p class="i18n" data-en="Training takes place in and around Rocafort. For 2026/27 we expect to use a combination of facilities in Rocafort and Bonrepòs — location can vary week to week, so please always check the WhatsApp group before travelling." data-es="Los entrenamientos se realizan en Rocafort y alrededores. Para 2026/27 está previsto combinar instalaciones en Rocafort y Bonrepòs. La ubicación puede variar de una semana a otra, así que recomendamos consultar siempre el grupo de WhatsApp antes de desplazarse.">Los entrenamientos se realizan en Rocafort y alrededores. Para 2026/27 está previsto combinar instalaciones en Rocafort y Bonrepòs. La ubicación puede variar de una semana a otra, así que recomendamos consultar siempre el grupo de WhatsApp antes de desplazarse.</p>
       </div>
       <div class="train-card">
-        <span class="tag i18n" data-en="Goalkeepers" data-es="Porteros">Porteros</span>
-        <h3 class="i18n" data-en="Goalkeeper-specific training" data-es="Entrenamiento específico de porteros">Entrenamiento específico de porteros</h3>
-        <p class="i18n" data-en="Goalkeeper-focused sessions are now available for children who want to try out the position." data-es="Ahora ofrecemos sesiones específicas para los niños que quieran probar la posición de portero.">Ahora ofrecemos sesiones específicas para los niños que quieran probar la posición de portero.</p>
-      </div>
-      <div class="train-card">
         <span class="tag i18n" data-en="Matches & tournaments" data-es="Partidos y torneos">Partidos y torneos</span>
         <h3 class="i18n" data-en="About once a month" data-es="Aproximadamente uno al mes">Aproximadamente uno al mes</h3>
         <p class="i18n" data-en="Roughly one match a month plus 3–4 tournaments across the season — friendlies that let children experience competitive football, without turning weekly training into an elite environment. Matches are meant to be fun and developmental: our squads are mixed-ability by design, and every child gets the chance to take part." data-es="Alrededor de un partido al mes, además de 3–4 torneos durante la temporada: partidos amistosos que permiten a los niños vivir el fútbol de competición, sin que el entrenamiento semanal deje de ser recreativo. Los partidos están pensados para ser divertidos y formativos: nuestros equipos son de habilidades mixtas por diseño, y todos los niños tienen la oportunidad de participar.">Alrededor de un partido al mes, además de 3–4 torneos durante la temporada: partidos amistosos que permiten a los niños vivir el fútbol de competición, sin que el entrenamiento semanal deje de ser recreativo. Los partidos están pensados para ser divertidos y formativos: nuestros equipos son de habilidades mixtas por diseño, y todos los niños tienen la oportunidad de participar.</p>
@@ -454,6 +454,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
           46111 Rocafort, Valencia
         </div>
         <div class="loc-item">
+          <span class="loc-label i18n" data-en="Surface" data-es="Superficie">Superficie</span>
+          <p class="i18n" data-en="This is a multi-sport court, so children need non-studded footwear — trainers or flat-soled boots rather than studded football boots." data-es="Es una pista polideportiva, así que los niños necesitan calzado sin tacos: zapatillas o botas de suela plana, no botas de fútbol con tacos.">Es una pista polideportiva, así que los niños necesitan calzado sin tacos: zapatillas o botas de suela plana, no botas de fútbol con tacos.</p>
+        </div>
+        <div class="loc-item">
           <span class="loc-label i18n" data-en="By car" data-es="En coche">En coche</span>
           <p class="i18n" data-en="The sports complex is on Avenida Dr. Eugenio López-Trigo. There's parking in the immediate area, including the car park beside the Rocafort Metro station. On busy Saturday mornings it's worth arriving a little early, as spaces can fill up." data-es="Hay aparcamiento en la zona, incluido el aparcamiento situado junto a la estación de Metro de Rocafort. Los sábados por la mañana recomendamos llegar con unos minutos de antelación por si hay más actividad en el polideportivo.">Hay aparcamiento en la zona, incluido el aparcamiento situado junto a la estación de Metro de Rocafort. Los sábados por la mañana recomendamos llegar con unos minutos de antelación por si hay más actividad en el polideportivo.</p>
         </div>
@@ -472,6 +476,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
         <div class="loc-address">
           Carrer Baixada de Carpesa<br>
           46131 Bonrepòs i Mirambell, Valencia
+        </div>
+        <div class="loc-item">
+          <span class="loc-label i18n" data-en="Surface" data-es="Superficie">Superficie</span>
+          <p class="i18n" data-en="This pitch is artificial turf, so studded football boots are fine here." data-es="Este campo es de césped artificial, así que las botas de fútbol con tacos están bien aquí.">Este campo es de césped artificial, así que las botas de fútbol con tacos están bien aquí.</p>
         </div>
         <div class="loc-note i18n" data-en="Full directions and parking details for this location will be added closer to the season — check back or ask a coach." data-es="Próximamente añadiremos las indicaciones completas y detalles de aparcamiento para esta ubicación. Consulta con un entrenador si lo necesitas antes.">Próximamente añadiremos las indicaciones completas y detalles de aparcamiento para esta ubicación. Consulta con un entrenador si lo necesitas antes.</div>
       </div>
@@ -622,18 +630,18 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
   <div class="wrap">
     <div class="section-head">
       <h2 class="i18n" data-en="Coaches" data-es="Entrenadores">Entrenadores</h2>
-      <p class="i18n" data-en="Volunteer coaches from the Rocafort Rockers community — the club is run entirely by parents and volunteers, not a commercial academy." data-es="Entrenadores voluntarios de la comunidad de Rocafort Rockers. El club está gestionado enteramente por padres y voluntarios, no es una academia comercial.">Entrenadores voluntarios de la comunidad de Rocafort Rockers. El club está gestionado enteramente por padres y voluntarios, no es una academia comercial.</p>
+      <p class="i18n" data-en="Rocafort Rockers is organised by two volunteer teams: coaches who run the football, and an administration team who handle registration, kit and logistics — the club is run entirely by parents and volunteers, not a commercial academy." data-es="Rocafort Rockers está organizado por dos equipos de voluntarios: los entrenadores, que llevan el fútbol, y el equipo de administración, que se encarga de las inscripciones, la equipación y la logística. El club está gestionado enteramente por padres y voluntarios, no es una academia comercial.">Rocafort Rockers está organizado por dos equipos de voluntarios: los entrenadores, que llevan el fútbol, y el equipo de administración, que se encarga de las inscripciones, la equipación y la logística. El club está gestionado enteramente por padres y voluntarios, no es una academia comercial.</p>
     </div>
     <div class="coach-grid">
       <div class="coach-card">
         <div class="coach-photo">A</div>
         <h3>Alex</h3>
         <div class="coach-role i18n" data-en="Coach / President" data-es="Entrenador / Presidente">Entrenador / Presidente</div>
-        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+        <p class="i18n" data-en="FA qualified and has recently completed the UEFA C coaching course, with coaching experience in the UK and USA." data-es="Titulado por la FA inglesa y ha completado recientemente el curso de entrenador UEFA C, con experiencia entrenando en el Reino Unido y EE. UU.">Titulado por la FA inglesa y ha completado recientemente el curso de entrenador UEFA C, con experiencia entrenando en el Reino Unido y EE. UU.</p>
       </div>
       <div class="coach-card">
         <div class="coach-photo">F</div>
-        <h3>Fabian</h3>
+        <h3>Fabio</h3>
         <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
         <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
       </div>
@@ -643,12 +651,70 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
         <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
         <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
       </div>
+      <div class="coach-card">
+        <div class="coach-photo">S</div>
+        <h3>Scott</h3>
+        <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">R</div>
+        <h3>Reed</h3>
+        <div class="coach-role i18n" data-en="Coach — ex-professional footballer" data-es="Entrenador — ex futbolista profesional">Entrenador — ex futbolista profesional</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">D</div>
+        <h3>Dancho</h3>
+        <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">R</div>
+        <h3>Raul</h3>
+        <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">J</div>
+        <h3>Jordan</h3>
+        <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
     </div>
-    <p style="margin-top:24px; color:var(--grey); font-size:0.9rem;" class="i18n"
-      data-en="More of our coaching team to be added — photo, first name and a short line for each."
-      data-es="Próximamente añadiremos al resto del equipo: foto, nombre y una breve descripción de cada uno.">
-      Próximamente añadiremos al resto del equipo: foto, nombre y una breve descripción de cada uno.
-    </p>
+    <h3 style="margin-top:44px; margin-bottom:20px; font-size:1.3rem;" class="i18n" data-en="Administration team" data-es="Equipo de administración">Equipo de administración</h3>
+    <div class="coach-grid">
+      <div class="coach-card">
+        <div class="coach-photo">L</div>
+        <h3>Lucy</h3>
+        <div class="coach-role i18n" data-en="Player registration" data-es="Inscripción de jugadores">Inscripción de jugadores</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">M</div>
+        <h3>Matilda</h3>
+        <div class="coach-role i18n" data-en="Match shirts" data-es="Camisetas de partido">Camisetas de partido</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">A</div>
+        <h3>Andres</h3>
+        <div class="coach-role i18n" data-en="Administration volunteer" data-es="Voluntario de administración">Voluntario de administración</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">T</div>
+        <h3>Tariq</h3>
+        <div class="coach-role i18n" data-en="Administration volunteer" data-es="Voluntario de administración">Voluntario de administración</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">H</div>
+        <h3>Holly</h3>
+        <div class="coach-role i18n" data-en="Administration volunteer" data-es="Voluntaria de administración">Voluntaria de administración</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">L</div>
+        <h3>Laura</h3>
+        <div class="coach-role i18n" data-en="Administration volunteer" data-es="Voluntaria de administración">Voluntaria de administración</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -678,8 +744,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
   <div class="wrap">
     <h2 class="i18n" data-en="Ready to join?" data-es="¿Listos para uniros?">¿Listos para uniros?</h2>
     <p class="i18n" data-en="Registration for the 2026/27 season is open — real football, a warm welcome, and a commitment that fits around family life." data-es="Ya está abierta la inscripción para la temporada 2026/27: fútbol de verdad, buena acogida y un compromiso que encaja con la vida familiar.">Ya está abierta la inscripción para la temporada 2026/27: fútbol de verdad, buena acogida y un compromiso que encaja con la vida familiar.</p>
+    <p class="i18n" style="font-size:0.9rem; color:var(--navy); opacity:0.75; max-width:480px; margin:10px auto 0;" data-en="The registration form doesn't include training location or fees — see the 'Getting there' and 'Fees' sections above for those." data-es="El formulario de inscripción no incluye el lugar de entrenamiento ni las cuotas: consulta los apartados 'Cómo llegar' y 'Cuotas' más arriba en esta página.">El formulario de inscripción no incluye el lugar de entrenamiento ni las cuotas: consulta los apartados 'Cómo llegar' y 'Cuotas' más arriba en esta página.</p>
     <div class="hero-ctas" style="justify-content:center;">
-      <a href="https://forms.gle/aU44SKDitZPd9xw3A" target="_blank" rel="noopener" class="btn-primary i18n" data-en="Register now" data-es="Inscríbete ahora">Inscríbete ahora</a>
+      <a href="https://forms.gle/1drQh5WJRRrLyjDv9" target="_blank" rel="noopener" class="btn-primary i18n" data-en="Register now" data-es="Inscríbete ahora">Inscríbete ahora</a>
       <a href="https://forms.gle/fQrw54CFJxkEaHLQ9" target="_blank" rel="noopener" class="btn-ghost i18n" data-en="Order a shirt" data-es="Pide tu camiseta">Pide tu camiseta</a>
     </div>
   </div>
@@ -720,7 +787,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
     <div class="contact-btns">
       <a href="mailto:info@rocafortrockers.com" class="cbtn">Email</a>
       <a href="https://forms.gle/fQrw54CFJxkEaHLQ9" target="_blank" rel="noopener" class="cbtn i18n" data-en="Order a shirt" data-es="Pide tu camiseta">Pide tu camiseta</a>
-      <a href="https://forms.gle/aU44SKDitZPd9xw3A" target="_blank" rel="noopener" class="cbtn filled i18n" data-en="Register" data-es="Inscríbete">Inscríbete</a>
+      <a href="https://forms.gle/1drQh5WJRRrLyjDv9" target="_blank" rel="noopener" class="cbtn filled i18n" data-en="Register" data-es="Inscríbete">Inscríbete</a>
     </div>
   </div>
 </section>
