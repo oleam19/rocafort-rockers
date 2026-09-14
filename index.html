@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rocafort Rockers delivers Saturday morning grassroots football for children aged 4–11, across two locations in Rocafort and Bonrepòs, Valencia.">
 <title>Rocafort Rockers</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mulish:wght@400;500;600;700&display=swap');
@@ -83,6 +84,7 @@ header{position:sticky; top:0; z-index:50; background:var(--white); border-botto
 @media(max-width:860px){.hero-photo{order:-1;}}
 .hero-eyebrow{color:var(--sky); font-weight:700; font-size:1rem; margin-bottom:12px;}
 .hero h1{font-size:clamp(2.5rem,6vw,4rem);}
+.hero-tagline{font-weight:700; color:var(--navy); font-size:1.05rem; margin-top:14px;}
 .hero p{margin-top:18px; font-size:1.12rem; color:var(--grey); max-width:520px;}
 .hero-ctas{display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;}
 .btn-primary{background:var(--navy); color:var(--white); font-weight:700; padding:14px 26px; border-radius:26px; font-size:1rem; display:inline-block;}
@@ -132,12 +134,35 @@ header{position:sticky; top:0; z-index:50; background:var(--white); border-botto
 .training{background:var(--paper);}
 .train-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:26px;}
 @media(max-width:700px){.train-grid{grid-template-columns:1fr;}}
+.train-grid .train-card:nth-child(4), .train-grid .train-card:nth-child(5){grid-column:1 / -1;}
 .train-card{background:var(--white); border-radius:16px; padding:26px;}
 .train-card .tag{color:var(--sky); font-weight:700; font-size:0.82rem; text-transform:none; margin-bottom:8px; display:block;}
 .train-card h3{font-size:1.15rem; margin-bottom:8px;}
 .train-card p{color:var(--grey); font-size:0.96rem;}
 
-/* ---- why join ---- */
+/* ---- fees ---- */
+.fee-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:36px;}
+@media(max-width:700px){.fee-grid{grid-template-columns:1fr;}}
+.fee-card{background:var(--white); border-radius:16px; padding:26px; text-align:center;}
+.fee-card.fee-highlight{background:var(--sun); }
+.fee-card .fee-kids{color:var(--grey); font-weight:700; font-size:0.85rem; margin-bottom:8px;}
+.fee-card.fee-highlight .fee-kids{color:var(--navy); opacity:0.75;}
+.fee-card .fee-price{font-family:'Baloo 2',sans-serif; font-weight:700; font-size:2rem; color:var(--navy);}
+.fee-card .fee-note{margin-top:6px; font-size:0.85rem; color:var(--grey);}
+.fee-card.fee-highlight .fee-note{color:var(--navy);}
+.fee-text p{color:var(--ink); font-size:0.98rem; margin-bottom:14px; max-width:760px;}
+.fee-text p:last-child{margin-bottom:0;}
+/* ---- location ---- */
+.loc-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:26px;}
+@media(max-width:800px){.loc-grid{grid-template-columns:1fr;}}
+.loc-card{background:var(--white); border-radius:16px; padding:28px;}
+.loc-card h3{font-size:1.25rem; margin-bottom:4px;}
+.loc-address{color:var(--grey); font-size:0.95rem; margin-bottom:18px; line-height:1.5;}
+.loc-item{margin-bottom:14px;}
+.loc-item:last-child{margin-bottom:0;}
+.loc-item .loc-label{color:var(--sky); font-weight:700; font-size:0.82rem; display:block; margin-bottom:3px;}
+.loc-item p{color:var(--ink); font-size:0.92rem; line-height:1.5;}
+.loc-note{margin-top:18px; padding-top:14px; border-top:1px solid #e6ddc6; color:var(--grey); font-size:0.88rem;}
 .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
 @media(max-width:800px){.why-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:520px){.why-grid{grid-template-columns:1fr;}}
@@ -218,6 +243,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
       <a href="#philosophy" class="i18n" data-en="Philosophy" data-es="Filosofía">Filosofía</a>
       <a href="#groups" class="i18n" data-en="Teams" data-es="Equipos">Equipos</a>
       <a href="#training" class="i18n" data-en="Training" data-es="Entrenamientos">Entrenamientos</a>
+      <a href="#location" class="i18n" data-en="Location" data-es="Cómo llegar">Cómo llegar</a>
+      <a href="#kit" class="i18n" data-en="What to bring" data-es="Qué traer">Qué traer</a>
+      <a href="#fees" class="i18n" data-en="Fees" data-es="Cuotas">Cuotas</a>
       <a href="#faq" class="i18n" data-en="FAQ" data-es="Preguntas">Preguntas</a>
       <a href="#contact" class="i18n" data-en="Contact" data-es="Contacto">Contacto</a>
     </nav>
@@ -235,6 +263,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
     <a href="#philosophy" class="i18n" data-en="Philosophy" data-es="Filosofía">Filosofía</a>
     <a href="#groups" class="i18n" data-en="Teams" data-es="Equipos">Equipos</a>
     <a href="#training" class="i18n" data-en="Training" data-es="Entrenamientos">Entrenamientos</a>
+      <a href="#location" class="i18n" data-en="Location" data-es="Cómo llegar">Cómo llegar</a>
+      <a href="#kit" class="i18n" data-en="What to bring" data-es="Qué traer">Qué traer</a>
+      <a href="#fees" class="i18n" data-en="Fees" data-es="Cuotas">Cuotas</a>
     <a href="#faq" class="i18n" data-en="FAQ" data-es="Preguntas">Preguntas</a>
     <a href="#contact" class="i18n" data-en="Contact" data-es="Contacto">Contacto</a>
     <a href="#join" class="i18n" data-en="Register" data-es="Inscríbete" style="color:var(--sky);">Inscríbete</a>
@@ -246,10 +277,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
     <div class="hero-inner">
       <div class="hero-eyebrow i18n" data-en="Rocafort, Valencia" data-es="Rocafort, Valencia">Rocafort, Valencia</div>
       <h1 class="i18n" data-en="Football for everyone." data-es="Fútbol para todos.">Fútbol para todos.</h1>
+      <p class="hero-tagline i18n" data-en="Rocafort Rockers delivers Saturday morning grassroots football for children aged 4–11, across two locations in Rocafort and Bonrepòs." data-es="Rocafort Rockers ofrece fútbol base los sábados por la mañana para niños y niñas de 4 a 11 años, en dos ubicaciones: Rocafort y Bonrepòs.">Rocafort Rockers ofrece fútbol base los sábados por la mañana para niños y niñas de 4 a 11 años, en dos ubicaciones: Rocafort y Bonrepòs.</p>
       <p class="i18n"
-        data-en="A friendly, volunteer-led community football club for boys and girls in Rocafort and the surrounding area. No trials. All abilities welcome."
-        data-es="Un club de fútbol comunitario, cercano y gestionado por voluntarios, para niños y niñas de Rocafort y alrededores. Sin pruebas de acceso. Todos los niveles son bienvenidos.">
-        Un club de fútbol comunitario, cercano y gestionado por voluntarios, para niños y niñas de Rocafort y alrededores. Sin pruebas de acceso. Todos los niveles son bienvenidos.
+        data-en="A friendly, volunteer-led community football club for boys and girls in Rocafort and the surrounding area. Real football, with a commitment that actually fits family life."
+        data-es="Un club de fútbol comunitario, cercano y gestionado por voluntarios, para niños y niñas de Rocafort y alrededores. Fútbol de verdad, con un compromiso que encaja con la vida familiar.">
+        Un club de fútbol comunitario, cercano y gestionado por voluntarios, para niños y niñas de Rocafort y alrededores. Fútbol de verdad, con un compromiso que encaja con la vida familiar.
       </p>
       <div class="hero-ctas">
         <a href="#join" class="btn-primary i18n" data-en="Register your child" data-es="Inscribe a tu hijo/a">Inscribe a tu hijo/a</a>
@@ -267,7 +299,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
     <div><div class="stat-num">50+</div><div class="stat-label i18n" data-en="children playing" data-es="niños y niñas jugando">niños y niñas jugando</div></div>
     <div><div class="stat-num">~50%</div><div class="stat-label i18n" data-en="of players are girls" data-es="de jugadores son niñas">de jugadores son niñas</div></div>
     <div><div class="stat-num">4</div><div class="stat-label i18n" data-en="age groups" data-es="categorías">categorías</div></div>
-    <div><div class="stat-num">0</div><div class="stat-label i18n" data-en="trials required" data-es="pruebas de acceso">pruebas de acceso</div></div>
+    <div><div class="stat-num">1</div><div class="stat-label i18n" data-en="training session a week" data-es="entrenamiento a la semana">entrenamiento a la semana</div></div>
   </div>
 </section>
 
@@ -283,9 +315,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
         Rocafort Rockers nació de una idea sencilla: los niños no deberían tener que pasar una prueba para poder jugar al fútbol. Lo que empezó como un pequeño grupo de niños y familias del pueblo se ha convertido en una comunidad de más de 50 jugadores y voluntarios.
       </p>
       <p class="i18n"
-        data-en="Boys and girls of different ages and abilities train together each week, supported by parents and volunteer coaches. Our goal isn't to build an elite football academy — it's to give children a place to play, learn, make friends and enjoy sport."
-        data-es="Niños y niñas de distintas edades y niveles entrenan juntos cada semana, con el apoyo de padres y entrenadores voluntarios. Nuestro objetivo no es formar una academia de élite, sino ofrecer a los niños un lugar donde jugar, aprender, hacer amigos y disfrutar del deporte.">
-        Niños y niñas de distintas edades y niveles entrenan juntos cada semana, con el apoyo de padres y entrenadores voluntarios. Nuestro objetivo no es formar una academia de élite, sino ofrecer a los niños un lugar donde jugar, aprender, hacer amigos y disfrutar del deporte.
+        data-en="We started in 2025 on a public pitch in Rocafort, then moved to the Polideportivo Municipal, and now also have access to an artificial pitch in Bonrepòs."
+        data-es="Empezamos en 2025 en un campo público de Rocafort, después nos trasladamos al Polideportivo Municipal, y ahora también tenemos acceso a un campo artificial en Bonrepòs.">
+        Empezamos en 2025 en un campo público de Rocafort, después nos trasladamos al Polideportivo Municipal, y ahora también tenemos acceso a un campo artificial en Bonrepòs.
+      </p>
+      <p class="i18n"
+        data-en="Boys and girls of different ages and abilities train together each week, supported by parents and volunteer coaches. Our goal is to give children a place to play, learn, make friends and enjoy sport."
+        data-es="Niños y niñas de distintas edades y niveles entrenan juntos cada semana, con el apoyo de padres y entrenadores voluntarios. Nuestro objetivo es ofrecer a los niños un lugar donde jugar, aprender, hacer amigos y disfrutar del deporte.">
+        Niños y niñas de distintas edades y niveles entrenan juntos cada semana, con el apoyo de padres y entrenadores voluntarios. Nuestro objetivo es ofrecer a los niños un lugar donde jugar, aprender, hacer amigos y disfrutar del deporte.
       </p>
       <p class="i18n"
         data-en="Rocafort Rockers, Asociación Cultural y Deportiva is a non-profit, volunteer-run community association."
@@ -294,9 +331,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
       </p>
     </div>
     <div class="quote-box i18n"
-      data-en="No trials. No selection by ability. No child sitting on the sidelines because they aren't considered good enough."
-      data-es="Sin pruebas. Sin selección por nivel. Ningún niño se queda en el banquillo por no ser “lo bastante bueno”.">
-      Sin pruebas. Sin selección por nivel. Ningún niño se queda en el banquillo por no ser “lo bastante bueno”.
+      data-en="Real coaching, a genuine team spirit, and a commitment that fits around family life — not the other way around."
+      data-es="Buena formación, un espíritu de equipo de verdad y un compromiso que encaja con la vida familiar, y no al revés.">
+      Buena formación, un espíritu de equipo de verdad y un compromiso que encaja con la vida familiar, y no al revés.
     </div>
   </div>
 </section>
@@ -305,24 +342,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
   <div class="wrap">
     <div class="section-head">
       <h2 class="i18n" data-en="Our philosophy" data-es="Nuestra filosofía">Nuestra filosofía</h2>
-      <p class="i18n" data-en="Grassroots football should be accessible to every child, whatever their current ability." data-es="El fútbol base debe estar al alcance de cualquier niño, sea cual sea su nivel actual.">El fútbol base debe estar al alcance de cualquier niño, sea cual sea su nivel actual.</p>
+      <p class="i18n" data-en="Real football and real coaching — built around what actually works for busy families." data-es="Fútbol de verdad y buena formación, pensados para lo que realmente funciona en las familias con la agenda llena.">Fútbol de verdad y buena formación, pensados para lo que realmente funciona en las familias con la agenda llena.</p>
     </div>
     <div class="phi-grid">
       <div class="phi-card">
-        <h3 class="i18n" data-en="Everyone is welcome" data-es="Todos son bienvenidos">Todos son bienvenidos</h3>
-        <p class="i18n" data-en="No trials, no selection by ability. Children who are new to football are just as welcome as children who've played for years." data-es="Sin pruebas ni selección por nivel. Los niños que empiezan de cero son tan bienvenidos como los que ya llevan años jugando.">Sin pruebas ni selección por nivel. Los niños que empiezan de cero son tan bienvenidos como los que ya llevan años jugando.</p>
+        <h3 class="i18n" data-en="Built for family life" data-es="Pensado para la vida familiar">Pensado para la vida familiar</h3>
+        <p class="i18n" data-en="Most clubs expect two training sessions a week plus a match every weekend. We ask for one committed session a week, with matches as an optional extra — real football that still leaves room for everything else." data-es="La mayoría de clubes piden dos entrenamientos semanales y partido cada fin de semana. Nosotros pedimos un entrenamiento semanal, con los partidos como algo opcional: fútbol de verdad que deja espacio para todo lo demás.">La mayoría de clubes piden dos entrenamientos semanales y partido cada fin de semana. Nosotros pedimos un entrenamiento semanal, con los partidos como algo opcional: fútbol de verdad que deja espacio para todo lo demás.</p>
       </div>
       <div class="phi-card">
         <h3 class="i18n" data-en="Girls and boys, together" data-es="Niñas y niños, juntos">Niñas y niños, juntos</h3>
         <p class="i18n" data-en="Around half of our players are girls, training and playing side by side with the boys every week." data-es="Alrededor de la mitad de nuestros jugadores son niñas, que entrenan y juegan junto a los niños cada semana.">Alrededor de la mitad de nuestros jugadores son niñas, que entrenan y juegan junto a los niños cada semana.</p>
       </div>
       <div class="phi-card">
-        <h3 class="i18n" data-en="Participation over results" data-es="Participación antes que resultados">Participación antes que resultados</h3>
-        <p class="i18n" data-en="We're not trying to build the strongest team. We care about enjoyment, confidence, teamwork, and kids wanting to come back next week." data-es="No buscamos formar el equipo más fuerte. Nos importa la diversión, la confianza, el trabajo en equipo y que los niños quieran volver la semana siguiente.">No buscamos formar el equipo más fuerte. Nos importa la diversión, la confianza, el trabajo en equipo y que los niños quieran volver la semana siguiente.</p>
+        <h3 class="i18n" data-en="A strong team spirit" data-es="Un espíritu de equipo fuerte">Un espíritu de equipo fuerte</h3>
+        <p class="i18n" data-en="Every child is coached properly and made to feel like they belong from their very first session — a warm, volunteer-run community, not just an hour of drills." data-es="Cada niño recibe una buena formación y se siente parte del grupo desde la primera sesión: una comunidad cercana, gestionada por voluntarios, y no solo una hora de ejercicios.">Cada niño recibe una buena formación y se siente parte del grupo desde la primera sesión: una comunidad cercana, gestionada por voluntarios, y no solo una hora de ejercicios.</p>
       </div>
       <div class="phi-card">
-        <h3 class="i18n" data-en="A community, not just a class" data-es="Una comunidad, no solo una clase">Una comunidad, no solo una clase</h3>
-        <p class="i18n" data-en="Rocafort Rockers is run by parents and volunteers, and it's as much about building a community for families as it is about football." data-es="Rocafort Rockers está gestionado por padres y voluntarios, y busca tanto crear comunidad entre familias como enseñar fútbol.">Rocafort Rockers está gestionado por padres y voluntarios, y busca tanto crear comunidad entre familias como enseñar fútbol.</p>
+        <h3 class="i18n" data-en="Affordable, by design" data-es="Pensado para ser asequible">Pensado para ser asequible</h3>
+        <p class="i18n" data-en="Fees go toward paying our coaches properly. Running costs like pitch hire and equipment are shared across all the age groups, keeping things affordable for every family." data-es="Las cuotas se destinan a pagar bien a nuestros entrenadores. Los costes de funcionamiento, como el alquiler de instalaciones y el material, se comparten entre todas las categorías, lo que mantiene el club asequible para todas las familias.">Las cuotas se destinan a pagar bien a nuestros entrenadores. Los costes de funcionamiento, como el alquiler de instalaciones y el material, se comparten entre todas las categorías, lo que mantiene el club asequible para todas las familias.</p>
       </div>
     </div>
   </div>
@@ -369,23 +406,142 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
       <div class="train-card">
         <span class="tag i18n" data-en="Season" data-es="Temporada">Temporada</span>
         <h3 class="i18n" data-en="Starts Saturday 19 September 2026" data-es="Empieza el sábado 19 de septiembre de 2026">Empieza el sábado 19 de septiembre de 2026</h3>
-        <p class="i18n" data-en="Saturday mornings, once a week — exact times for each age group are confirmed to families before the season starts." data-es="Sábados por la mañana, una vez por semana. Los horarios de cada categoría se confirman a las familias antes de empezar la temporada.">Sábados por la mañana, una vez por semana. Los horarios de cada categoría se confirman a las familias antes de empezar la temporada.</p>
+        <p class="i18n" data-en="Saturday mornings, once a week, for around an hour. For 2026/27 we're planning two age-based sessions, likely around 10:00–11:00 and 11:00–12:00, with exact times confirmed to families in advance. Please arrive a few minutes early so we can start on time." data-es="Sábados por la mañana, una vez por semana, durante aproximadamente una hora. Para 2026/27 está previsto tener dos sesiones por edad, probablemente entre las 10:00–11:00 y las 11:00–12:00, con los horarios exactos confirmados a las familias con antelación. Recomendamos llegar unos minutos antes para poder empezar puntualmente.">Sábados por la mañana, una vez por semana, durante aproximadamente una hora. Para 2026/27 está previsto tener dos sesiones por edad, probablemente entre las 10:00–11:00 y las 11:00–12:00, con los horarios exactos confirmados a las familias con antelación. Recomendamos llegar unos minutos antes para poder empezar puntualmente.</p>
       </div>
       <div class="train-card">
         <span class="tag i18n" data-en="Where" data-es="Dónde">Dónde</span>
         <h3 class="i18n" data-en="Rocafort & Bonrepòs" data-es="Rocafort y Bonrepòs">Rocafort y Bonrepòs</h3>
-        <p class="i18n" data-en="Training takes place in and around Rocafort. For 2026/27 we expect to use a combination of facilities in Rocafort and Bonrepòs, with the exact location confirmed to families in advance." data-es="Los entrenamientos se realizan en Rocafort y alrededores. Para 2026/27 está previsto combinar instalaciones en Rocafort y Bonrepòs, confirmando la ubicación exacta a las familias con antelación.">Los entrenamientos se realizan en Rocafort y alrededores. Para 2026/27 está previsto combinar instalaciones en Rocafort y Bonrepòs, confirmando la ubicación exacta a las familias con antelación.</p>
-      </div>
-      <div class="train-card">
-        <span class="tag i18n" data-en="Goalkeepers" data-es="Porteros">Porteros</span>
-        <h3 class="i18n" data-en="Goalkeeper-specific training" data-es="Entrenamiento específico de porteros">Entrenamiento específico de porteros</h3>
-        <p class="i18n" data-en="Goalkeeper-focused sessions are now available for children who want to try out the position." data-es="Ahora ofrecemos sesiones específicas para los niños que quieran probar la posición de portero.">Ahora ofrecemos sesiones específicas para los niños que quieran probar la posición de portero.</p>
+        <p class="i18n" data-en="Training takes place in and around Rocafort. For 2026/27 we expect to use a combination of facilities in Rocafort and Bonrepòs — location can vary week to week, so please always check the WhatsApp group before travelling." data-es="Los entrenamientos se realizan en Rocafort y alrededores. Para 2026/27 está previsto combinar instalaciones en Rocafort y Bonrepòs. La ubicación puede variar de una semana a otra, así que recomendamos consultar siempre el grupo de WhatsApp antes de desplazarse.">Los entrenamientos se realizan en Rocafort y alrededores. Para 2026/27 está previsto combinar instalaciones en Rocafort y Bonrepòs. La ubicación puede variar de una semana a otra, así que recomendamos consultar siempre el grupo de WhatsApp antes de desplazarse.</p>
       </div>
       <div class="train-card">
         <span class="tag i18n" data-en="Matches & tournaments" data-es="Partidos y torneos">Partidos y torneos</span>
         <h3 class="i18n" data-en="About once a month" data-es="Aproximadamente uno al mes">Aproximadamente uno al mes</h3>
-        <p class="i18n" data-en="Roughly one match a month plus 3–4 tournaments across the season — friendlies that let children experience competitive football, without turning weekly training into an elite environment." data-es="Alrededor de un partido al mes, además de 3–4 torneos durante la temporada: partidos amistosos que permiten a los niños vivir el fútbol de competición, sin que el entrenamiento semanal deje de ser recreativo.">Alrededor de un partido al mes, además de 3–4 torneos durante la temporada: partidos amistosos que permiten a los niños vivir el fútbol de competición, sin que el entrenamiento semanal deje de ser recreativo.</p>
+        <p class="i18n" data-en="Roughly one match a month plus 3–4 tournaments across the season — friendlies that let children experience competitive football, without turning weekly training into an elite environment. Matches are meant to be fun and developmental: our squads are mixed-ability by design, and every child gets the chance to take part." data-es="Alrededor de un partido al mes, además de 3–4 torneos durante la temporada: partidos amistosos que permiten a los niños vivir el fútbol de competición, sin que el entrenamiento semanal deje de ser recreativo. Los partidos están pensados para ser divertidos y formativos: nuestros equipos son de habilidades mixtas por diseño, y todos los niños tienen la oportunidad de participar.">Alrededor de un partido al mes, además de 3–4 torneos durante la temporada: partidos amistosos que permiten a los niños vivir el fútbol de competición, sin que el entrenamiento semanal deje de ser recreativo. Los partidos están pensados para ser divertidos y formativos: nuestros equipos son de habilidades mixtas por diseño, y todos los niños tienen la oportunidad de participar.</p>
       </div>
+      <div class="train-card">
+        <span class="tag i18n" data-en="Communication" data-es="Comunicación">Comunicación</span>
+        <h3 class="i18n" data-en="Stay in the loop" data-es="Mantente informado">Mantente informado</h3>
+        <p class="i18n" data-en="We use the WhatsApp group for training times, locations, attendance polls, weather updates, matches and tournaments. Please check the group before each session — especially if the weather is poor or the location may have changed." data-es="Usamos el grupo de WhatsApp para los horarios de entrenamiento, ubicaciones, encuestas de asistencia, avisos meteorológicos, partidos y torneos. Por favor, revisad el grupo antes de cada sesión, especialmente si el tiempo es malo o puede haber cambiado la ubicación.">Usamos el grupo de WhatsApp para los horarios de entrenamiento, ubicaciones, encuestas de asistencia, avisos meteorológicos, partidos y torneos. Por favor, revisad el grupo antes de cada sesión, especialmente si el tiempo es malo o puede haber cambiado la ubicación.</p>
+        <p class="i18n" style="margin-top:10px;" data-en="Because sessions are outdoors, weather can affect training — we've had to cancel in the past when the pitch was unsafe. We also run a weekly attendance poll: knowing numbers in advance helps us plan coaches, groups and equipment, so please respond even if the answer is 'not attending'." data-es="Al ser sesiones al aire libre, el tiempo puede afectar al entrenamiento; en el pasado hemos tenido que cancelar cuando el terreno no era seguro. También hacemos una encuesta semanal de asistencia: saber cuántos niños vienen nos ayuda a organizar entrenadores, grupos y material, así que por favor respondan aunque sea para decir que no asistiréis.">Al ser sesiones al aire libre, el tiempo puede afectar al entrenamiento; en el pasado hemos tenido que cancelar cuando el terreno no era seguro. También hacemos una encuesta semanal de asistencia: saber cuántos niños vienen nos ayuda a organizar entrenadores, grupos y material, así que por favor respondan aunque sea para decir que no asistiréis.</p>
+      </div>
+      <div class="train-card">
+        <span class="tag i18n" data-en="Schedule" data-es="Calendario">Calendario</span>
+        <h3 class="i18n" data-en="19 September – 19 December" data-es="19 de septiembre – 19 de diciembre">19 de septiembre – 19 de diciembre</h3>
+        <p class="i18n" data-en="Our normal plan is to train every Saturday from 19 September through to Christmas. Weather permitting, we expect to run 11 sessions in total." data-es="Nuestro plan habitual es entrenar todos los sábados desde el 19 de septiembre hasta Navidad. Si el tiempo lo permite, esperamos realizar 11 sesiones en total.">Nuestro plan habitual es entrenar todos los sábados desde el 19 de septiembre hasta Navidad. Si el tiempo lo permite, esperamos realizar 11 sesiones en total.</p>
+        <p class="i18n" style="margin-top:10px; margin-bottom:4px;" data-en="There will be no training on the two puente weekends:" data-es="No habrá entrenamiento durante los dos fines de semana de puente:">No habrá entrenamiento durante los dos fines de semana de puente:</p>
+        <ul style="padding-left:18px; color:var(--grey); font-size:0.94rem; line-height:1.6;">
+          <li class="i18n" data-en="Saturday 10 October — puente for Día de la Comunitat Valenciana / Fiesta Nacional de España" data-es="Sábado 10 de octubre — puente por el Día de la Comunitat Valenciana / Fiesta Nacional de España">Sábado 10 de octubre — puente por el Día de la Comunitat Valenciana / Fiesta Nacional de España</li>
+          <li class="i18n" data-en="Saturday 5 December — puente for Día de la Constitución / Inmaculada Concepción" data-es="Sábado 5 de diciembre — puente por el Día de la Constitución / Inmaculada Concepción">Sábado 5 de diciembre — puente por el Día de la Constitución / Inmaculada Concepción</li>
+        </ul>
+        <p class="i18n" style="margin-top:10px;" data-en="Our final session before Christmas is planned for Saturday 19 December." data-es="El último entrenamiento antes de Navidad está previsto para el sábado 19 de diciembre.">El último entrenamiento antes de Navidad está previsto para el sábado 19 de diciembre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="i18n" data-en="Getting there" data-es="Cómo llegar">Cómo llegar</h2>
+      <p class="i18n" data-en="Training for 2026/27 rotates between two locations — exact schedule confirmed to families in advance." data-es="Los entrenamientos de la temporada 2026/27 rotan entre dos ubicaciones; el calendario exacto se confirma a las familias con antelación.">Los entrenamientos de la temporada 2026/27 rotan entre dos ubicaciones; el calendario exacto se confirma a las familias con antelación.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card">
+        <h3>Rocafort</h3>
+        <div class="loc-address">
+          Polideportivo Municipal de Rocafort<br>
+          Av. Dr. Eugenio López-Trigo, 9<br>
+          46111 Rocafort, Valencia
+        </div>
+        <div class="loc-item">
+          <span class="loc-label i18n" data-en="Surface" data-es="Superficie">Superficie</span>
+          <p class="i18n" data-en="This is a multi-sport court, so children need non-studded footwear — trainers or flat-soled boots rather than studded football boots." data-es="Es una pista polideportiva, así que los niños necesitan calzado sin tacos: zapatillas o botas de suela plana, no botas de fútbol con tacos.">Es una pista polideportiva, así que los niños necesitan calzado sin tacos: zapatillas o botas de suela plana, no botas de fútbol con tacos.</p>
+        </div>
+        <div class="loc-item">
+          <span class="loc-label i18n" data-en="By car" data-es="En coche">En coche</span>
+          <p class="i18n" data-en="The sports complex is on Avenida Dr. Eugenio López-Trigo. There's parking in the immediate area, including the car park beside the Rocafort Metro station. On busy Saturday mornings it's worth arriving a little early, as spaces can fill up." data-es="Hay aparcamiento en la zona, incluido el aparcamiento situado junto a la estación de Metro de Rocafort. Los sábados por la mañana recomendamos llegar con unos minutos de antelación por si hay más actividad en el polideportivo.">Hay aparcamiento en la zona, incluido el aparcamiento situado junto a la estación de Metro de Rocafort. Los sábados por la mañana recomendamos llegar con unos minutos de antelación por si hay más actividad en el polideportivo.</p>
+        </div>
+        <div class="loc-item">
+          <span class="loc-label i18n" data-en="By Metro" data-es="En Metro">En Metro</span>
+          <p class="i18n" data-en="The nearest station is Rocafort, on Metrovalencia Line 1 — on the same avenue as the sports facilities, making it a convenient option for families travelling from Valencia or neighbouring towns." data-es="La estación más cercana es Rocafort, de la Línea 1 de Metrovalencia. La estación se encuentra en la misma Avenida Dr. Eugenio López-Trigo que las instalaciones deportivas.">La estación más cercana es Rocafort, de la Línea 1 de Metrovalencia. La estación se encuentra en la misma Avenida Dr. Eugenio López-Trigo que las instalaciones deportivas.</p>
+        </div>
+        <div class="loc-item">
+          <span class="loc-label i18n" data-en="Walking from the Metro" data-es="Desde el Metro">Desde el Metro</span>
+          <p class="i18n" data-en="From Rocafort station, follow Av. Dr. Eugenio López-Trigo towards the municipal sports facilities and football pitch — the station, ground and sports complex are all in the same immediate area." data-es="Desde la estación de Rocafort, continúe por Av. Dr. Eugenio López-Trigo en dirección al polideportivo y al campo de fútbol municipal.">Desde la estación de Rocafort, continúe por Av. Dr. Eugenio López-Trigo en dirección al polideportivo y al campo de fútbol municipal.</p>
+        </div>
+        <div class="loc-note i18n" data-en="Please arrive 5–10 minutes before the session so children have time to get ready and coaches can start on time." data-es="Recomendamos llegar 5–10 minutos antes del entrenamiento para que los niños/as puedan prepararse y podamos empezar puntualmente.">Recomendamos llegar 5–10 minutos antes del entrenamiento para que los niños/as puedan prepararse y podamos empezar puntualmente.</div>
+      </div>
+      <div class="loc-card">
+        <h3>Bonrepòs i Mirambell</h3>
+        <div class="loc-address">
+          Carrer Baixada de Carpesa<br>
+          46131 Bonrepòs i Mirambell, Valencia
+        </div>
+        <div class="loc-item">
+          <span class="loc-label i18n" data-en="Surface" data-es="Superficie">Superficie</span>
+          <p class="i18n" data-en="This pitch is artificial turf, so studded football boots are fine here." data-es="Este campo es de césped artificial, así que las botas de fútbol con tacos están bien aquí.">Este campo es de césped artificial, así que las botas de fútbol con tacos están bien aquí.</p>
+        </div>
+        <div class="loc-note i18n" data-en="Full directions and parking details for this location will be added closer to the season — check back or ask a coach." data-es="Próximamente añadiremos las indicaciones completas y detalles de aparcamiento para esta ubicación. Consulta con un entrenador si lo necesitas antes.">Próximamente añadiremos las indicaciones completas y detalles de aparcamiento para esta ubicación. Consulta con un entrenador si lo necesitas antes.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kit" class="training">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="i18n" data-en="What to bring" data-es="Qué traer">Qué traer</h2>
+    </div>
+    <div class="train-grid">
+      <div class="train-card">
+        <span class="tag i18n" data-en="Training kit" data-es="Para entrenar">Para entrenar</span>
+        <h3 class="i18n" data-en="Comfortable and ready to move" data-es="Cómodo y listo para moverse">Cómodo y listo para moverse</h3>
+        <p class="i18n" data-en="Comfortable sports clothes, trainers or football boots suited to the surface, shin pads and a water bottle." data-es="Ropa deportiva cómoda, zapatillas o botas de fútbol adecuadas a la superficie, espinilleras y una botella de agua.">Ropa deportiva cómoda, zapatillas o botas de fútbol adecuadas a la superficie, espinilleras y una botella de agua.</p>
+        <p class="i18n" style="margin-top:10px;" data-en="In colder weather: long sleeves, full-length trousers and a light hat or beanie are a good idea." data-es="Cuando hace frío: recomendamos manga larga, pantalón largo y un gorro ligero.">Cuando hace frío: recomendamos manga larga, pantalón largo y un gorro ligero.</p>
+      </div>
+      <div class="train-card">
+        <span class="tag i18n" data-en="Match day kit" data-es="Para los partidos">Para los partidos</span>
+        <h3 class="i18n" data-en="What to bring on match days" data-es="Qué traer los días de partido">Qué traer los días de partido</h3>
+        <ul style="padding-left:18px; color:var(--grey); font-size:0.96rem; line-height:1.6;">
+          <li class="i18n" data-en="Red Rocafort Rockers shirt" data-es="Camiseta roja de Rocafort Rockers">Camiseta roja de Rocafort Rockers</li>
+          <li class="i18n" data-en="Shorts and football socks" data-es="Pantalón corto y medias de fútbol">Pantalón corto y medias de fútbol</li>
+          <li class="i18n" data-en="Football boots — studs or flat soles, depending on the surface" data-es="Botas de fútbol: tacos o suela plana, según la superficie">Botas de fútbol: tacos o suela plana, según la superficie</li>
+          <li class="i18n" data-en="Shin pads" data-es="Espinilleras">Espinilleras</li>
+          <li class="i18n" data-en="Water bottle" data-es="Botella de agua">Botella de agua</li>
+          <li class="i18n" data-en="A warm jacket for while they're waiting to come on — ideally not red, so it doesn't clash with the shirt" data-es="Una chaqueta de abrigo para cuando esperan a salir, preferiblemente que no sea roja para no confundirse con la camiseta">Una chaqueta de abrigo para cuando esperan a salir, preferiblemente que no sea roja para no confundirse con la camiseta</li>
+        </ul>
+        <p class="i18n" style="margin-top:12px;" data-en="Please arrive around 30 minutes before kick-off." data-es="Recomendamos llegar unos 30 minutos antes del inicio del partido.">Recomendamos llegar unos 30 minutos antes del inicio del partido.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fees" class="training">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="i18n" data-en="Fees" data-es="Cuotas">Cuotas</h2>
+      <p class="i18n" data-en="September–December term, per child." data-es="Trimestre de septiembre a diciembre, por niño/a.">Trimestre de septiembre a diciembre, por niño/a.</p>
+    </div>
+    <div class="fee-grid">
+      <div class="fee-card">
+        <div class="fee-kids i18n" data-en="1 child" data-es="1 niño/a">1 niño/a</div>
+        <div class="fee-price">€45</div>
+      </div>
+      <div class="fee-card">
+        <div class="fee-kids i18n" data-en="2 children" data-es="2 niños/as">2 niños/as</div>
+        <div class="fee-price">€65</div>
+        <div class="fee-note i18n" data-en="total" data-es="en total">en total</div>
+      </div>
+      <div class="fee-card fee-highlight">
+        <div class="fee-kids i18n" data-en="3 children" data-es="3 niños/as">3 niños/as</div>
+        <div class="fee-price">€65</div>
+        <div class="fee-note i18n" data-en="total — the third child is free!" data-es="en total — ¡el tercer niño/a es gratis!">en total — ¡el tercer niño/a es gratis!</div>
+      </div>
+    </div>
+    <div class="fee-text">
+      <p class="i18n" data-en="The standard fee for a single child in the September–December term is €50. Weather permitting, we expect to run 11 training sessions before Christmas." data-es="La cuota estándar para un solo niño/a en el trimestre de septiembre a diciembre es de 50 €. Si el tiempo lo permite, esperamos realizar 11 sesiones de entrenamiento antes de Navidad.">La cuota estándar para un solo niño/a en el trimestre de septiembre a diciembre es de 50 €. Si el tiempo lo permite, esperamos realizar 11 sesiones de entrenamiento antes de Navidad.</p>
+      <p class="i18n" data-en="The fee is slightly higher than last year because we're now paying €90 a week to rent the pitch at Bonrepòs, as well as buying some new equipment at the start of the season." data-es="La cuota es ligeramente más alta que la del año pasado porque ahora pagamos 90 € por semana por el alquiler del campo de Bonrepòs, además de comprar nuevo material deportivo al inicio de la temporada.">La cuota es ligeramente más alta que la del año pasado porque ahora pagamos 90 € por semana por el alquiler del campo de Bonrepòs, además de comprar nuevo material deportivo al inicio de la temporada.</p>
+      <p class="i18n" data-en="Rocafort Rockers is run on a non-profit basis. Any money left over at the end of the term stays within the group, and will either buy equipment, reduce the fees for the January and April terms, or go towards our end-of-season paella and social event. Because of this, we expect January and April fees to be lower than this first term." data-es="Rocafort Rockers funciona sin ánimo de lucro. Cualquier dinero que quede al final del trimestre permanecerá dentro del grupo y se utilizará para comprar material, reducir las cuotas de los trimestres de enero y abril, o contribuir a nuestra paella/actividad social de final de temporada. Por este motivo, esperamos que las cuotas de enero y abril sean más bajas que la de este primer trimestre.">Rocafort Rockers funciona sin ánimo de lucro. Cualquier dinero que quede al final del trimestre permanecerá dentro del grupo y se utilizará para comprar material, reducir las cuotas de los trimestres de enero y abril, o contribuir a nuestra paella/actividad social de final de temporada. Por este motivo, esperamos que las cuotas de enero y abril sean más bajas que la de este primer trimestre.</p>
     </div>
   </div>
 </section>
@@ -397,8 +553,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
     </div>
     <div class="why-grid">
       <div class="why-card">
-        <h3 class="i18n" data-en="Inclusive" data-es="Inclusivo">Inclusivo</h3>
-        <p class="i18n" data-en="No trials, no minimum playing standard to join." data-es="Sin pruebas ni nivel mínimo para apuntarse.">Sin pruebas ni nivel mínimo para apuntarse.</p>
+        <h3 class="i18n" data-en="Fits family life" data-es="Encaja con la familia">Encaja con la familia</h3>
+        <p class="i18n" data-en="One training session a week, with matches optional — not the two-evenings-plus-a-game standard." data-es="Un entrenamiento a la semana, con los partidos como opción, no el estándar de dos tardes más partido.">Un entrenamiento a la semana, con los partidos como opción, no el estándar de dos tardes más partido.</p>
       </div>
       <div class="why-card">
         <h3 class="i18n" data-en="Mixed" data-es="Mixto">Mixto</h3>
@@ -436,7 +592,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
       </details>
       <details class="faq-item">
         <summary class="i18n" data-en="Are there trials?" data-es="¿Hay pruebas de acceso?">¿Hay pruebas de acceso?</summary>
-        <p class="i18n" data-en="No. There is no selection process — every child who registers can join." data-es="No. No hay proceso de selección: todo niño o niña que se inscriba puede unirse.">No. No hay proceso de selección: todo niño o niña que se inscriba puede unirse.</p>
+        <p class="i18n" data-en="No — we coach mixed-ability groups by design, and every child who registers can join." data-es="No. Entrenamos grupos de habilidades mixtas por diseño, y todo niño o niña que se inscriba puede unirse.">No. Entrenamos grupos de habilidades mixtas por diseño, y todo niño o niña que se inscriba puede unirse.</p>
       </details>
       <details class="faq-item">
         <summary class="i18n" data-en="Can girls join?" data-es="¿Pueden apuntarse las niñas?">¿Pueden apuntarse las niñas?</summary>
@@ -460,7 +616,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
       </details>
       <details class="faq-item">
         <summary class="i18n" data-en="What does my child need to bring?" data-es="¿Qué necesita traer mi hijo/a?">¿Qué necesita traer mi hijo/a?</summary>
-        <p class="i18n" data-en="Trainers or boots suitable for the surface, comfortable sportswear and water." data-es="Zapatillas o botas adecuadas para la superficie, ropa deportiva cómoda y agua.">Zapatillas o botas adecuadas para la superficie, ropa deportiva cómoda y agua.</p>
+        <p class="i18n" data-en="For regular training: comfortable sportswear, trainers or boots suited to the surface, shin pads and water. Match days need the full red kit — see the 'What to bring' section further up this page for the complete list." data-es="Para entrenar: ropa deportiva cómoda, zapatillas o botas adecuadas a la superficie, espinilleras y agua. Los días de partido hace falta la equipación roja completa: consulta el apartado 'Qué traer' más arriba en esta página para ver la lista completa.">Para entrenar: ropa deportiva cómoda, zapatillas o botas adecuadas a la superficie, espinilleras y agua. Los días de partido hace falta la equipación roja completa: consulta el apartado 'Qué traer' más arriba en esta página para ver la lista completa.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="i18n" data-en="Why does the form ask about my child's football experience?" data-es="¿Por qué el formulario pregunta por la experiencia futbolística de mi hijo/a?">¿Por qué el formulario pregunta por la experiencia futbolística de mi hijo/a?</summary>
+        <p class="i18n" data-en="It's only used to help us group children appropriately by age and development — there's no selection or trial involved." data-es="Solo se usa para ayudarnos a agrupar a los niños de forma adecuada según su edad y desarrollo; no implica ninguna selección ni prueba.">Solo se usa para ayudarnos a agrupar a los niños de forma adecuada según su edad y desarrollo; no implica ninguna selección ni prueba.</p>
       </details>
     </div>
   </div>
@@ -470,18 +630,18 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
   <div class="wrap">
     <div class="section-head">
       <h2 class="i18n" data-en="Coaches" data-es="Entrenadores">Entrenadores</h2>
-      <p class="i18n" data-en="Volunteer coaches from the Rocafort Rockers community." data-es="Entrenadores voluntarios de la comunidad de Rocafort Rockers.">Entrenadores voluntarios de la comunidad de Rocafort Rockers.</p>
+      <p class="i18n" data-en="Rocafort Rockers is organised by two volunteer teams: coaches who run the football, and an administration team who handle registration, kit and logistics — the club is run entirely by parents and volunteers, not a commercial academy." data-es="Rocafort Rockers está organizado por dos equipos de voluntarios: los entrenadores, que llevan el fútbol, y el equipo de administración, que se encarga de las inscripciones, la equipación y la logística. El club está gestionado enteramente por padres y voluntarios, no es una academia comercial.">Rocafort Rockers está organizado por dos equipos de voluntarios: los entrenadores, que llevan el fútbol, y el equipo de administración, que se encarga de las inscripciones, la equipación y la logística. El club está gestionado enteramente por padres y voluntarios, no es una academia comercial.</p>
     </div>
     <div class="coach-grid">
       <div class="coach-card">
         <div class="coach-photo">A</div>
         <h3>Alex</h3>
         <div class="coach-role i18n" data-en="Coach / President" data-es="Entrenador / Presidente">Entrenador / Presidente</div>
-        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+        <p class="i18n" data-en="FA qualified and has recently completed the UEFA C coaching course, with coaching experience in the UK and USA." data-es="Titulado por la FA inglesa y ha completado recientemente el curso de entrenador UEFA C, con experiencia entrenando en el Reino Unido y EE. UU.">Titulado por la FA inglesa y ha completado recientemente el curso de entrenador UEFA C, con experiencia entrenando en el Reino Unido y EE. UU.</p>
       </div>
       <div class="coach-card">
         <div class="coach-photo">F</div>
-        <h3>Fabian</h3>
+        <h3>Fabio</h3>
         <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
         <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
       </div>
@@ -491,12 +651,70 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
         <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
         <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
       </div>
+      <div class="coach-card">
+        <div class="coach-photo">S</div>
+        <h3>Scott</h3>
+        <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">R</div>
+        <h3>Reed</h3>
+        <div class="coach-role i18n" data-en="Coach — ex-professional footballer" data-es="Entrenador — ex futbolista profesional">Entrenador — ex futbolista profesional</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">D</div>
+        <h3>Dancho</h3>
+        <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">R</div>
+        <h3>Raul</h3>
+        <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">J</div>
+        <h3>Jordan</h3>
+        <div class="coach-role i18n" data-en="Coach" data-es="Entrenador">Entrenador</div>
+        <p class="i18n" data-en="Volunteer coach with Rocafort Rockers." data-es="Entrenador voluntario de Rocafort Rockers.">Entrenador voluntario de Rocafort Rockers.</p>
+      </div>
     </div>
-    <p style="margin-top:24px; color:var(--grey); font-size:0.9rem;" class="i18n"
-      data-en="More of our coaching team to be added — photo, first name and a short line for each."
-      data-es="Próximamente añadiremos al resto del equipo: foto, nombre y una breve descripción de cada uno.">
-      Próximamente añadiremos al resto del equipo: foto, nombre y una breve descripción de cada uno.
-    </p>
+    <h3 style="margin-top:44px; margin-bottom:20px; font-size:1.3rem;" class="i18n" data-en="Administration team" data-es="Equipo de administración">Equipo de administración</h3>
+    <div class="coach-grid">
+      <div class="coach-card">
+        <div class="coach-photo">L</div>
+        <h3>Lucy</h3>
+        <div class="coach-role i18n" data-en="Player registration" data-es="Inscripción de jugadores">Inscripción de jugadores</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">M</div>
+        <h3>Matilda</h3>
+        <div class="coach-role i18n" data-en="Match shirts" data-es="Camisetas de partido">Camisetas de partido</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">A</div>
+        <h3>Andres</h3>
+        <div class="coach-role i18n" data-en="Administration volunteer" data-es="Voluntario de administración">Voluntario de administración</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">T</div>
+        <h3>Tariq</h3>
+        <div class="coach-role i18n" data-en="Administration volunteer" data-es="Voluntario de administración">Voluntario de administración</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">H</div>
+        <h3>Holly</h3>
+        <div class="coach-role i18n" data-en="Administration volunteer" data-es="Voluntaria de administración">Voluntaria de administración</div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-photo">L</div>
+        <h3>Laura</h3>
+        <div class="coach-role i18n" data-en="Administration volunteer" data-es="Voluntaria de administración">Voluntaria de administración</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -525,9 +743,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
 <section class="join" id="join">
   <div class="wrap">
     <h2 class="i18n" data-en="Ready to join?" data-es="¿Listos para uniros?">¿Listos para uniros?</h2>
-    <p class="i18n" data-en="Registration for the 2026/27 season is open. No trials, no pressure — just football." data-es="Ya está abierta la inscripción para la temporada 2026/27. Sin pruebas, sin presión: solo fútbol.">Ya está abierta la inscripción para la temporada 2026/27. Sin pruebas, sin presión: solo fútbol.</p>
+    <p class="i18n" data-en="Registration for the 2026/27 season is open — real football, a warm welcome, and a commitment that fits around family life." data-es="Ya está abierta la inscripción para la temporada 2026/27: fútbol de verdad, buena acogida y un compromiso que encaja con la vida familiar.">Ya está abierta la inscripción para la temporada 2026/27: fútbol de verdad, buena acogida y un compromiso que encaja con la vida familiar.</p>
+    <p class="i18n" style="font-size:0.9rem; color:var(--navy); opacity:0.75; max-width:480px; margin:10px auto 0;" data-en="The registration form doesn't include training location or fees — see the 'Getting there' and 'Fees' sections above for those." data-es="El formulario de inscripción no incluye el lugar de entrenamiento ni las cuotas: consulta los apartados 'Cómo llegar' y 'Cuotas' más arriba en esta página.">El formulario de inscripción no incluye el lugar de entrenamiento ni las cuotas: consulta los apartados 'Cómo llegar' y 'Cuotas' más arriba en esta página.</p>
     <div class="hero-ctas" style="justify-content:center;">
-      <a href="https://forms.gle/aU44SKDitZPd9xw3A" target="_blank" rel="noopener" class="btn-primary i18n" data-en="Register now" data-es="Inscríbete ahora">Inscríbete ahora</a>
+      <a href="https://forms.gle/1drQh5WJRRrLyjDv9" target="_blank" rel="noopener" class="btn-primary i18n" data-en="Register now" data-es="Inscríbete ahora">Inscríbete ahora</a>
       <a href="https://forms.gle/fQrw54CFJxkEaHLQ9" target="_blank" rel="noopener" class="btn-ghost i18n" data-en="Order a shirt" data-es="Pide tu camiseta">Pide tu camiseta</a>
     </div>
   </div>
@@ -546,6 +765,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
       <div class="gal-item i18n" data-en="More photos soon" data-es="Más fotos pronto">Más fotos pronto</div>
       <div class="gal-item i18n" data-en="More photos soon" data-es="Más fotos pronto">Más fotos pronto</div>
     </div>
+    <p style="margin-top:20px; color:var(--grey); font-size:0.9rem;" class="i18n"
+      data-en="We may take photos or videos at sessions to share with the club (WhatsApp, website, social media), only with parental consent. Declining consent never affects your child's participation."
+      data-es="Es posible que tomemos fotos o vídeos durante las sesiones para compartir con el club (WhatsApp, web, redes sociales), siempre con el consentimiento de las familias. No dar el consentimiento nunca afecta a la participación de tu hijo/a.">
+      Es posible que tomemos fotos o vídeos durante las sesiones para compartir con el club (WhatsApp, web, redes sociales), siempre con el consentimiento de las familias. No dar el consentimiento nunca afecta a la participación de tu hijo/a.
+    </p>
   </div>
 </section>
 
@@ -553,12 +777,17 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
   <div class="wrap contact-inner">
     <div class="contact-info">
       <h2>Rocafort Rockers</h2>
-      <p class="i18n" data-en="Rocafort, Valencia — Asociación Cultural y Deportiva sin ánimo de lucro" data-es="Rocafort, Valencia — Asociación Cultural y Deportiva sin ánimo de lucro">Rocafort, Valencia — Asociación Cultural y Deportiva sin ánimo de lucro</p>
+      <p class="i18n" data-en="ROCAFORT ROCKERS, ASOCIACIÓN CULTURAL Y DEPORTIVA — Rocafort, Valencia" data-es="ROCAFORT ROCKERS, ASOCIACIÓN CULTURAL Y DEPORTIVA — Rocafort, Valencia">ROCAFORT ROCKERS, ASOCIACIÓN CULTURAL Y DEPORTIVA — Rocafort, Valencia</p>
+      <p style="margin-top:16px; font-weight:700; color:var(--navy);">Alex O'Leary</p>
+      <p style="color:var(--grey); font-size:0.92rem; line-height:1.7;">
+        <a href="tel:+447894985001">+44 7894 985 001</a> / <a href="tel:+34691581580">+34 691 581 580</a><br>
+        <a href="mailto:info@rocafortrockers.com">info@rocafortrockers.com</a>
+      </p>
     </div>
     <div class="contact-btns">
-      <a href="mailto:info@rocafortrockers.es" class="cbtn">Email</a>
+      <a href="mailto:info@rocafortrockers.com" class="cbtn">Email</a>
       <a href="https://forms.gle/fQrw54CFJxkEaHLQ9" target="_blank" rel="noopener" class="cbtn i18n" data-en="Order a shirt" data-es="Pide tu camiseta">Pide tu camiseta</a>
-      <a href="https://forms.gle/aU44SKDitZPd9xw3A" target="_blank" rel="noopener" class="cbtn filled i18n" data-en="Register" data-es="Inscríbete">Inscríbete</a>
+      <a href="https://forms.gle/1drQh5WJRRrLyjDv9" target="_blank" rel="noopener" class="cbtn filled i18n" data-en="Register" data-es="Inscríbete">Inscríbete</a>
     </div>
   </div>
 </section>
