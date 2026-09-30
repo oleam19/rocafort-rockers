@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" id="htmlRoot">
+<html lang="en" id="htmlRoot">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -270,8 +270,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
     </nav>
     <div class="nav-right">
       <div class="lang-toggle">
-        <button id="btnEs" class="active" onclick="setLang('es')">ES</button>
-        <button id="btnEn" onclick="setLang('en')">EN</button>
+        <button id="btnEs" onclick="setLang('es')">ES</button>
+        <button id="btnEn" class="active" onclick="setLang('en')">EN</button>
       </div>
       <a href="#join" class="nav-cta desktop i18n" data-en="Register" data-es="Inscríbete">Inscríbete</a>
       <button class="menu-btn" aria-label="Menu" onclick="toggleMobile()">☰</button>
@@ -293,7 +293,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{outline:2px solid v
 
 <div class="announce-bar">
   <div class="wrap announce-bar-inner">
-    <span class="i18n" data-en="Enrolment update: Alevín still has a few spaces — all other age groups are full until January." data-es="Actualización de inscripciones: Alevín todavía tiene algunas plazas — el resto de categorías están completas hasta enero.">Actualización de inscripciones: Alevín todavía tiene algunas plazas — el resto de categorías están completas hasta enero.</span>
+    <span class="i18n" data-en="We are FULL for the 2026/27 season, except Alevín — a few spaces remain. Register now to join the waiting list." data-es="Estamos COMPLETOS para la temporada 2026/27, excepto Alevín, donde quedan algunas plazas. Inscríbete para entrar en la lista de espera.">Estamos COMPLETOS para la temporada 2026/27, excepto Alevín, donde quedan algunas plazas. Inscríbete para entrar en la lista de espera.</span>
     <a href="#join" class="i18n" data-en="More info →" data-es="Más información →">Más información →</a>
   </div>
 </div>
@@ -874,7 +874,7 @@ function toggleMobile(){
   const mn = document.getElementById('mobilenav');
   mn.style.display = mn.style.display === 'block' ? 'none' : 'block';
 }
-setLang('es');
+setLang('en');
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
